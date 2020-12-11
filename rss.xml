@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+    <title>Obaveštenja</title>
+    <link>http://wwww.proba.com/index.html</link>
+    <description>Najnovije vesti</description>
+    <copyright>Copyright 2019, zvuk.rs</copyright>
+    <language>sr</language>
+    <category>Headphones</category>
+    <pubDate>Mon, 2 Dec 2019</pubDate>
+    <docs>http://blogs.law.hardvrd.edu/tech/rss</docs>
+    <ttl>15</ttl>
+
+
+<item>
+    <title>Izasao Novi Model</title>
+    <link>index.html/vest1</link>
+    <description>zVuk Hedfons TruSound 2 od sada u prodaji!</description>
+</item>
+<item>
+    <title>Black Friday 20% </title>
+    <link>index.html/vest2</link>
+    <description>20% popusta na sve Irfons slusalice!</description>
+</item>
+</channel>
+</rss>
