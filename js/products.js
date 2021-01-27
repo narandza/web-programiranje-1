@@ -148,9 +148,9 @@ let countdown = setInterval(getRemainingTime,1000);
     const p = document.getElementById(product);
     if(p)
         p.classList.remove('section-hidden');
-    else{
-    const def=document.getElementById('headphones');
-    def.classList.remove('section-hidden');
+    else if (product != 'headphones'){
+        const def=document.getElementById('headphones');
+        def.classList.remove('section-hidden');
     }
 })()
 
