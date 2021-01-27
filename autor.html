@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zVUK</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -31,7 +32,7 @@
                     <a href="index.html" class="navbar_links">Početna</a>
                 </li>
                 <li class="navbar_item">
-                    <a id="navProizvodi" class="navbar_links">Proizvodi</a>
+                    <a id="navProizvodi" href="products.html" class="navbar_links">Proizvodi</a>
                 </li>
                 <li class="navbar_item dropDownMenu">
                     <a href="#" class="navbar_links">Dokumentacija/Autor</a>
@@ -43,62 +44,71 @@
         </div>
     </nav>
     <!--Hero Section-->
-    <div class="main">
-        <div class="main_container">
-            <div class="main_content">
-                <h1>O Autoru</h1>
-                <h2>Dimitrije Jovanović 35/19</h2>
-            </div>
-            <div class="main_img--container">
-                <img src="img/ja.jpg" alt="sliakAutora" id="slikaAutora">
+    <section class="author">
+        <div class="title">
+            <h2>Dimitrije Jovanović</h2>
+            <h3>35/19</h3>
+            <div class="author-img">
+                <img src="img/ja.jpg" alt="autor sajta">
             </div>
         </div>
-        <div class="table_container">
-            <div class="table">
-                <table id='table-author'>
-                    <thead>
-                        <tr>
-                            <th colspan="2">Podaci o autoru</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>Ime:</th>
-                            <td>Dimitrije</td>
-                        </tr>
-                        <tr>
-                            <th>Prezime:</th>
-                            <td>Jovanović</td>
-                        </tr>
-                        <tr>
-                            <th>Email:</th>
-                            <td>dimitrije.jovanovic.35.19@ict.edu.rs</td>
-                        </tr>
-                        <tr>
-                            <th>Datum rođenja:</th>
-                            <td>26.07.1999</td>
-                        </tr>
-                        <tr>
-                            <th>Меsto rođenja:</th>
-                            <td>Pirot</td>
-                        </tr>
-                        <tr>
-                            <th>Završena srednja škola:</th>
-                            <td>Gimnazija Pirot</td>
-                        </tr>
-                        <tr>
-                            <th>Fakultet/visoka škola:</th>
-                            <td> Visoka škola strukovnih studija za informacione i komunikacione tehnologije</td>
-                        </tr>
-                        <tr>
-                            <th>Broj indeksa:</th>
-                            <td>35/19</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="section-center">
+            <article class="info">
+                <div class="info-title">
+                    <p>Osnovne informacije o autoru</p>
+                    <button type="button"class="info-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="info-text">
+                    <p>
+                        Rođen sam u Pirotu, student sam Visoke škole ICT od 2019. godine.
+                    </p>
+                </div>
+            </article>
+            <article class="info">
+                <div class="info-title">
+                    <p>Kontakt</p>
+                    <button type="button"class="info-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="info-text">
+                    <p>
+                        dimitrije.jovanovic.35.19@ict.edu.rs
+                    </p>
+                </div>
+            </article>
+            <article class="info">
+                <div class="info-title">
+                    <p>Školovanje</p>
+                    <button type="button"class="info-btn">
+                        <span class="plus-icon">
+                            <i class="far fa-plus-square"></i>
+                        </span>
+                        <span class="minus-icon">
+                            <i class="far fa-minus-square"></i>
+                        </span>
+                    </button>
+                </div>
+                <div class="info-text">
+                    <p>
+                        Završio sam Gimnaziju u Pirotu. Trenutno studiram na visokoj školi ICT u Beogradu.
+                    </p>
+                </div>
+            </article>
         </div>
-    </div>
+    </section>
     <!--Footer-->
     <div class="footer_container">
         <div class="footer_links">
@@ -169,7 +179,7 @@
     </div>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/jQuery.js" type="text/javascript"></script>
-    <script src="js/daisy.js" type="type/javascript"></script>
+    <script src="js/author.js"type="text/javascript"></script>
 </body>
 
 </html>

@@ -1,0 +1,115 @@
+.author{
+    padding:2rem 5rem ;
+    background-color: #141414;
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (max-width: 992px) {
+  .info{
+    display: grid;
+  }
+  .section-center {
+    width: 95vw;
+  }
+}
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+}
+.title h2 {
+  text-align: center;
+  font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+.title h3{
+  font-size: 2rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.author-img{
+ display: flex;
+ justify-content: center;
+}
+.author-img img{
+  height: 50vh;
+  border-radius: 10px;
+}
+.info {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+.info-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  text-align:center;
+  padding:1rem;
+  background-color: #181818;
+  border: 1px solid #ff8177;
+  border-radius: 5px;
+}
+
+.info-title p {
+  margin-bottom: 0;
+  color: #fff;
+}
+.info-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+.info-btn:hover {
+  transform: rotate(90deg);
+}
+.info-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #202020;
+  color:#fff;
+}
+.info-text p {
+  padding: 1rem;
+  margin-bottom: 0;
+}
+/* hide text */
+.info-text {
+  display: none;
+}
+.show-text .info-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}

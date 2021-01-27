@@ -8,7 +8,10 @@
 ul{
     list-style: none;
 }
-
+a{
+    text-decoration: none;
+    color:#fff;
+}
 .navbar{
     background: #131313;
     height: 80px;
@@ -762,50 +765,57 @@ ul{
     transform: scale(0.775);
     transition: 0.2s ease-in;
 }
-.table_container{
-    height: 90vh;
-}
 
-.table{
+
+  /* Product */
+  .product_container
+  {
     display: flex;
     align-items: center;
-    justify-content: center;
-    height:70vh;
-}
+    justify-self: center;
+    margin: 0 auto;
+    height: 120vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+    
+  }
 
-#table-author, th, td {
+.table-product, th, td {
     border: 1px solid #ff8177;
     border-collapse: collapse;
 }
 
-#table-author{
+.table-product{
     background-color: #202020;
     padding: 1rem;
     color:#fff;
-    width: 70%;
-    height:60vh;
+    width: 100%;
+    height:10vh;
 }
-#table-author thead{
+.table-product thead{
     background-color: #181818;
 
 }
 
-#table-author thead tr th{
-    padding:3rem;
+.table-product thead tr th{
+    padding:1rem 5rem;
     margin: 2rem;
-    font-size:2rem;
+    font-size:1rem;
 }
 
-#table-author tbody tr{
+.table-product tbody tr{
     font-size:1rem;
     text-align:left;
 }
 
-#table-author tbody tr td{
+.table-product tbody tr td{
   padding: 1rem;
   margin:1rem;
 }
-#table-author tbody tr th{
+.table-product tbody tr th{
     padding: 1rem;
     margin:1rem;
   }

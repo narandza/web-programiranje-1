@@ -17,6 +17,33 @@ const prezime = document.querySelector('#prezime');
 const email = document.querySelector('#email');
 const lozinka = document.querySelector('#lozinka');
 const potvrdiLozinku = document.querySelector('#potvrdiLozinku');
+const emailLogin = document.querySelector("#emailLogin");
+const lozinkaLogin = document.querySelector("#lozinkaLogin");
+
+//regEX
+const reImePrzime =/^[A-ZČŠĆĐŽ][a-zčćžšđ]{2,30}(\s[A-ZČŠĆĐŽ][a-zčćžšđ]{2,30})?$/;
+const reEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+//lozinka mora da sadrzi makar jednu cifru, makar jedno malo slovo, makar jedno veliko slovo,najmanje 8 karaktera
+const reLozinka = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
+
+function proveriLogin (){
+    console.log("porav")
+    const emailValue=emailLogin.value;
+    const lozinkaValue = lozinkaLogin.value;
+    if(!reEmail.test(emailValue)){
+        document.querySelector("#emailLoginError").innerHTML="Nije ispravno napisana adresa.(ex. jovanjovic@mail.com)";
+    }
+    else{
+        document.querySelector("#emailLoginError").innerHTML="";
+    }
+
+    if(!reLozinka.test(lozinkaValue)){
+        document.querySelector("#lozinkaLoginError").innerHTML="Lozinka mora biti minimalne duzine od 8 karaktera i da sadrzi u sebi bar jedno veliko slovo, jedno malo slovo i jednu cifru. ";
+    }
+    else{
+        document.querySelector("#lozinkaLoginError").innerHTML="";
+    }
+}
 
 
 function proveri () {
@@ -25,11 +52,6 @@ function proveri () {
     const emailValue = email.value;
     const lozinkaValue = lozinka.value;
     const potvrdiLozinkuValue = potvrdiLozinku.value;
-
-    const reImePrzime =/^[A-ZČŠĆĐŽ][a-zčćžšđ]{2,30}(\s[A-ZČŠĆĐŽ][a-zčćžšđ]{2,30})?$/;
-    const reEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    //lozinka mora da sadrzi makar jednu cifru, makar jedno malo slovo, makar jedno veliko slovo,najmanje 8 karaktera
-    const reLozinka = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
 
     if(!reImePrzime.test(imeValue)){
         document.querySelector("#imeError").innerHTML="Ime mora početi velikim slovom.";

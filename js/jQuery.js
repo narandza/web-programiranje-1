@@ -13,18 +13,9 @@ $(document).ready(function () {
     })
 
     //zebra
-    $('#table-author tbody tr:even').css({
+    $('.table-product tbody tr:even').css({
         backgroundColor: "#171717", color: "#f5f5f5"
     })
-
-    $(".js-video-button").modalVideo({
-        youtube: {
-            controls: 0,
-            nocookie: true
-        }
-    });
-
-
 })
 
 

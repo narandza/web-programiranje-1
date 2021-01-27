@@ -27,7 +27,7 @@
                     <a href="index.html" class="navbar_links">Početna</a>
                 </li>
                 <li class="navbar_item">
-                    <a id="navProizvodi" class="navbar_links">Proizvodi</a>
+                    <a id="navProizvodi" href="products.html" class="navbar_links">Proizvodi</a>
                 </li>
                 <li class="navbar_item dropDownMenu">
                     <a href="#" class="navbar_links">Dokumentacija/Autor</a>
@@ -46,14 +46,14 @@
                         <h1 class="form_title">Prijavljivanje</h1>
                         <div class='form_message form_message-error'></div> 
                         <div class="form_input-group">
-                          <input type="text" class="form_input" placeholder="Korisnicko ime ili email" autofocus>
-                          <div class="form_input-error-msg"></div>
+                          <input id="emailLogin"type="text" class="form_input" placeholder="Email adresa" autofocus>
+                          <div id="emailLoginError"class="form_input-error-msg"></div>
                         </div>
                           <div class="form_input-group">
-                              <input type="password" class="form_input" autofocus placeholder="Lozinka">
-                              <p class="form_input-error-msg"></p>
+                              <input id="lozinkaLogin"type="password" class="form_input" autofocus placeholder="Lozinka">
+                              <p id="lozinkaLoginError"class="form_input-error-msg"></p>
                           </div>
-                          <button class="form_button" type="submit">Prijavite se</button>
+                          <button type="button" onclick = "proveriLogin()"class="form_button">Prijavite se</button>
                           <p class="form_text">
                               <a href="#" class="form_link">Zaboravili ste lozinku?</a>
                           </p>
