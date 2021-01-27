@@ -37,6 +37,14 @@ const restock = document.querySelector(".restock");
 const dealine = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4")
 const earphonesBtn = document.querySelector(".earphones-btn")
+// const proizvodi =[
+//     {
+//         name:"hefons",
+//         specifications:"sfdasfdasfa",
+
+//     }
+// ]
+
 
 products.forEach(item =>{
     item.addEventListener("click", function (e){
@@ -135,5 +143,13 @@ function getRemainingTime (){
 
 let countdown = setInterval(getRemainingTime,1000);
 
+(()=>{
+    const product = document.location.search.replace(/^.product?\=/,'')
+    const p = document.getElementById(product);
+    if(p)
+        p.classList.remove('section-hidden');
+    const def=document.getElementById('headphones');
+    def.classList.remove('section-hidden');
+})()
 
 getRemainingTime();
