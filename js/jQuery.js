@@ -17,12 +17,7 @@ $(document).ready(function () {
         backgroundColor: "#171717", color: "#f5f5f5"
     })
 
-    $(".js-video-button").modalVideo({
-        youtube: {
-            controls: 0,
-            nocookie: true
-        }
-    });
+    
 
 })
 

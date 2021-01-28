@@ -36,14 +36,7 @@ const daniUNedelji = [
 const restock = document.querySelector(".restock");
 const dealine = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4")
-const earphonesBtn = document.querySelector(".earphones-btn")
-// const proizvodi =[
-//     {
-//         name:"hefons",
-//         specifications:"sfdasfdasfa",
 
-//     }
-// ]
 
 
 products.forEach(item =>{
